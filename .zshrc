@@ -6,6 +6,7 @@ fi
 
 # Essential
 source ~/.zplug/init.zsh
+export ZPLUG_LOADFILE="$HOME/.zsh/local.zsh"
 
 # Make sure to use double quotes to prevent shell expansion
 zplug "zsh-users/zsh-syntax-highlighting"
