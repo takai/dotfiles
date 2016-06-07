@@ -9,4 +9,8 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(setq el-get-user-package-directory (locate-user-emacs-file "init"))
+(setq el-get-dir (locate-user-emacs-file "packages"))
+(setq el-get-user-package-directory (locate-user-emacs-file "init-files"))
+(add-to-list 'el-get-recipe-path (locate-user-emacs-file "recipes"))
+
+(el-get-bundle init-loader)
