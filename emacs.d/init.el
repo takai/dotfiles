@@ -14,5 +14,8 @@
 (add-to-list 'el-get-recipe-path (locate-user-emacs-file "recipes"))
 
 (el-get-bundle init-loader)
+
 (el-get-bundle ddskk)
+(el-get-bundle migemo)
 (el-get-bundle navi2ch)
+
