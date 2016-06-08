@@ -15,7 +15,7 @@
 
 (el-get-bundle init-loader)
 
+(el-get-bundle auto-complete)
 (el-get-bundle ddskk)
 (el-get-bundle migemo)
 (el-get-bundle navi2ch)
-

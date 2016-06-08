@@ -1,3 +1,4 @@
 *.elc
 
 /emacs.d/packages
+/emacs.d/ac-comphist.dat
