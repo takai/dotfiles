@@ -15,3 +15,4 @@
 
 (el-get-bundle init-loader)
 (el-get-bundle ddskk)
+(el-get-bundle navi2ch)
