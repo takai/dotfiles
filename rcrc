@@ -1,4 +1,4 @@
 DOTFILES_DIRS="$HOME/src/dotfiles"
 
 EXCLUDES="README.md LICENSE Brewfile"
-SYMLINK_DIRS="emacs.d"
+SYMLINK_DIRS="emacs.d zsh"
