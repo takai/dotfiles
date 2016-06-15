@@ -12,3 +12,6 @@ tmp/**/*
 !tmp/cache/.keep
 *.pyc
 railways.cache
+.rakeTasks
+*.iml
+.idea
