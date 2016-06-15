@@ -21,3 +21,4 @@
 (el-get-bundle markdown-mode)
 (el-get-bundle migemo)
 (el-get-bundle navi2ch)
+(el-get-bundle nginx-mode)
