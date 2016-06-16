@@ -22,3 +22,4 @@
 (el-get-bundle migemo)
 (el-get-bundle navi2ch)
 (el-get-bundle nginx-mode)
+(el-get-bundle yaml-mode)
