@@ -18,6 +18,7 @@
 (el-get-bundle auto-complete)
 (el-get-bundle ddskk)
 (el-get-bundle exec-path-from-shell)
+(el-get-bundle js2-mode)
 (el-get-bundle markdown-mode)
 (el-get-bundle migemo)
 (el-get-bundle navi2ch)
