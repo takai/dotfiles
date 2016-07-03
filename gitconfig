@@ -9,6 +9,7 @@
   ci = commit -v
   co = checkout
   dc = diff --cached
+  graph = log --graph --oneline --decorate=full
   pf = push --force-with-lease
   st = status
 [core]
