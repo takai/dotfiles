@@ -4,3 +4,4 @@ SAVEHIST=10240
 
 setopt extended_history
 setopt share_history
+setopt hist_ignore_dups
