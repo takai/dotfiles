@@ -17,6 +17,7 @@
 
 (el-get-bundle auto-complete)
 (el-get-bundle ddskk)
+(el-get-bundle dockerfile-mode)
 (el-get-bundle exec-path-from-shell)
 (el-get-bundle js2-mode)
 (el-get-bundle matlab-mode)
