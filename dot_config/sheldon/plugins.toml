@@ -43,4 +43,6 @@ use = ["*.zsh"]
 local = "/Users/takai/.config/zsh/completions"
 apply = ["fpath"]
 
+[plugins.mise]
+inline = 'eval "$(mise activate zsh)"'
 
