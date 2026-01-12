@@ -36,11 +36,11 @@ apply = ["defer"]
 github = "yous/lime"
 
 [plugins.site-settings]
-local = "/Users/takai/.config/zsh/settings"
+local = "~/.config/zsh/settings"
 use = ["*.zsh"]
 
 [plugins.site-completions]
-local = "/Users/takai/.config/zsh/completions"
+local = "~/.config/zsh/completions"
 apply = ["fpath"]
 
 [plugins.mise]
