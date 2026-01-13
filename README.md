@@ -22,11 +22,6 @@ chezmoi init --apply <repo-url>
 
 2) Configure git identity for the template in `dot_gitconfig.tmpl`:
 
-```sh
-chezmoi data set git.name "Your Name"
-chezmoi data set git.email "you@example.com"
-```
-
 3) Install tool versions from `mise`:
 
 ```sh
