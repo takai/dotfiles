@@ -15,6 +15,12 @@
 ;; Show time in mode line.
 (display-time-mode 1)
 
+;; C-h deletes backward (recommended)
+(keyboard-translate ?\C-h ?\C-?)
+
+;; Alternative help key
+(global-set-key (kbd "C-x ?") 'help-command)
+
 ;; package.el setup
 
 (require 'package)
