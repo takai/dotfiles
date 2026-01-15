@@ -32,3 +32,6 @@
 [user]
     name = {{ .git.name }}
     email = {{ .git.email }}
+{{- if (index .git "signingkey") }}
+    signingkey = {{ .git.signingkey }}
+{{- end }}
