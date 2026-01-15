@@ -3,6 +3,8 @@ LANG=ja_JP.UTF-8
 EDITOR=vim
 WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 
+PATH=$PATH:$HOME/.local/bin
+
 {{- if eq .chezmoi.os "darwin" }}
 alias ls='ls -G -w'
 {{- else if eq .chezmoi.os "linux" }}
