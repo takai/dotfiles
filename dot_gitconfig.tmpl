@@ -19,6 +19,9 @@
   ff = only
 [commit]
   template = ~/.gitmessage
+{{- if (index .git "signingkey") }}
+  gpgsign = true
+{{- end }}
 [fetch]
   prune = true
 [rebase]
