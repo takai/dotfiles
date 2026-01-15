@@ -101,3 +101,6 @@
 (when (my/font-available-p "Hiragino Maru Gothic ProN")
   (set-fontset-font t 'japanese-jisx0208 (font-spec :family "Hiragino Maru Gothic ProN"))
   (set-fontset-font t 'katakana-jisx0201 (font-spec :family "Hiragino Maru Gothic ProN")))
+(custom-set-variables
+ '(package-selected-packages nil))
+(custom-set-faces)
