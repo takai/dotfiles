@@ -29,13 +29,13 @@
   compactionHeuristic = true
 [init]
   defaultBranch = main
+[url "git@github.com:"]
+  insteadOf = https://github.com/
 [user]
   name = {{ .git.name }}
   email = {{ .git.email }}
 {{- if (index .git "signingkey") }}
   signingkey = {{ .git.signingkey }}
 {{- end }}
-
 [ghq]
   root = ~/src
-  
