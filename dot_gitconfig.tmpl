@@ -30,8 +30,12 @@
 [init]
   defaultBranch = main
 [user]
-    name = {{ .git.name }}
-    email = {{ .git.email }}
+  name = {{ .git.name }}
+  email = {{ .git.email }}
 {{- if (index .git "signingkey") }}
-    signingkey = {{ .git.signingkey }}
+  signingkey = {{ .git.signingkey }}
 {{- end }}
+
+[ghq]
+  root = ~/src
+  
