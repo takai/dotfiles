@@ -6,5 +6,7 @@ ruby = "4.0"
 go = "1.25"
 usage = "latest"
 ghq = "latest"
+fzf = "latest"
+
 "go:github.com/takai/yt-transcript/cmd/yt-transcript" = "latest"
 "go:github.com/takai/naduke/cmd/naduke" = "latest"
