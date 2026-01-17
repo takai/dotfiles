@@ -1,3 +1,6 @@
+[env]
+GOPRIVATE = "github.com/takai/*"
+
 [tools]
 ruby = "4.0"
 go = "1.25"
