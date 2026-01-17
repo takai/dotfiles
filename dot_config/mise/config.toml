@@ -8,5 +8,7 @@ usage = "latest"
 ghq = "latest"
 fzf = "latest"
 
+"github:takai/git-ai-commit" = "latest"
+
 "go:github.com/takai/yt-transcript/cmd/yt-transcript" = "latest"
 "go:github.com/takai/naduke/cmd/naduke" = "latest"
