@@ -39,6 +39,10 @@ github = "yous/lime"
 local = "~/.config/zsh/settings"
 use = ["*.zsh"]
 
+[plugins.site-functions]
+local = "~/.config/zsh/functions"
+use = ["*.zsh"]
+
 [plugins.site-completions]
 local = "~/.config/zsh/completions"
 apply = ["fpath"]
