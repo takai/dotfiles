@@ -1,5 +1,8 @@
 [env]
 GOPRIVATE = "github.com/takai/*"
+GONOSUMDB = "github.com/takai/*"
+GONOPROXY = "github.com/takai/*"
+GOPROXY = "direct"
 
 [tools]
 ruby = "4.0"
