@@ -1,3 +1,6 @@
+[settings]
+idiomatic_version_file_enable_tools = ["ruby"]
+
 [env]
 GOPRIVATE = "github.com/takai/*"
 GONOSUMDB = "github.com/takai/*"
