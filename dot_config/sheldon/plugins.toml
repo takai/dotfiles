@@ -35,6 +35,10 @@ apply = ["defer"]
 [plugins.lime]
 github = "yous/lime"
 
+[plugins.site-completions]
+local = "~/.config/zsh/completions"
+apply = ["fpath"]
+
 [plugins.compinit]
 inline = """
 autoload -Uz compinit && compinit
@@ -48,10 +52,6 @@ use = ["*.zsh"]
 [plugins.site-functions]
 local = "~/.config/zsh/functions"
 use = ["*.zsh"]
-
-[plugins.site-completions]
-local = "~/.config/zsh/completions"
-apply = ["fpath"]
 
 [plugins.mise]
 inline = 'eval "$(mise activate zsh)"'
