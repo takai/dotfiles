@@ -1,5 +1,39 @@
+# --- Operating System Files ---
 .DS_Store
-*.sw[nop]
-.vscode
-.mairu.json
-.ruby-lsp
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- IDE/Editor Configurations ---
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, PyCharm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.*.sw[a-z]
+.*.un~
+.#*
+Session.vim
+
+# --- Temporary/Build Files ---
+*.log
+*.tmp
+*.bak
+node_modules/
+build/
+dist/
