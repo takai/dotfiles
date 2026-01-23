@@ -3,5 +3,8 @@
     "commit": "",
     "pr": ""
   },
-  "includeCoAuthoredBy": false
+  "includeCoAuthoredBy": false,
+  "enabledPlugins": {
+    "ai-commit@git-ai-commit-plugins": true
+  }
 }
