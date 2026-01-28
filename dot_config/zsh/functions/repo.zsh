@@ -2,13 +2,19 @@ repo() {
   local query="$*"
   local dir
 
-  dir=$(
-    ghq list -p |
-      fzf --prompt="repo> " \
-          --height=70% --reverse \
-          --query "$query" \
-          --select-1 --exit-0
-  ) || return
+  if [ -n "$query" ]; then
+    dir=$(ghq list -p | grep -E "/${query}$" | head -n 1)
+  fi
+
+  if [ -z "$dir" ]; then
+    dir=$(
+      ghq list -p |
+        fzf --prompt="repo> " \
+            --height=70% --reverse \
+            --query "$query" \
+            --select-1 --exit-0
+    ) || return
+  fi
 
   [ -n "$dir" ] && cd "$dir"
 }
