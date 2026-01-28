@@ -13,7 +13,7 @@
   pf = push --force-with-lease
   st = status
   delete-merged = "!f() { git branch --merged ${1-main} | grep -vE \"^\\*|master$|main$|develop$\" | xargs git branch -d; }; f"
-  branch-changes = log main..HEAD --reverse --format="- %h %s"
+  log-branch = log main..HEAD --reverse --format=\"- %h %s\"
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
