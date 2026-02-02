@@ -40,5 +40,11 @@
 {{- if (index .git "signingkey") }}
   signingkey = {{ .git.signingkey }}
 {{- end }}
+{{- if eq (index .git "format") "ssh" }}
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  allowedSignersFile = ~/.config/git/allowed_signers
+{{- end }}
 [ghq]
   root = ~/src
