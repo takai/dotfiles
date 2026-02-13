@@ -30,8 +30,8 @@
 (setq package-enable-at-startup nil)
 
 (setq package-archives
-      '(("gnu"   . "https://elpa.gnu.org/packages/")
-        ("melpa" . "https://melpa.org/packages/")))
+      '(("gnu"          . "https://elpa.gnu.org/packages/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 (package-initialize)
 
@@ -41,8 +41,13 @@
 
 ;; Ensure required packages are installed
 
-(dolist (pkg '(ddskk))
+(defvar my/package-refreshed nil)
+
+(dolist (pkg '(ddskk markdown-mode))
   (unless (package-installed-p pkg)
+    (unless my/package-refreshed
+      (package-refresh-contents)
+      (setq my/package-refreshed t))
     (package-install pkg)))
 
 ;; SKK (DD-SKK)
