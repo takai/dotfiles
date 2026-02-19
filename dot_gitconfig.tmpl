@@ -14,6 +14,7 @@
   st = status
   delete-merged = "!f() { git branch --merged ${1-main} | grep -vE \"^\\*|master$|main$|develop$\" | xargs git branch -d; }; f"
   log-branch = log main..HEAD --reverse --format=\"- %h %s\"
+  fetch-rebase = "!f() { git fetch origin main && git rebase origin/main; }; f"
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
