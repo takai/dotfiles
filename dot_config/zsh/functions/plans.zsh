@@ -5,18 +5,6 @@ plans() {
   # Ensure the directory exists
   [[ ! -d "$plan_dir" ]] && echo "Error: $plan_dir not found." && return 1
 
-  # Automatically select the clipboard command based on the OS/environment
-  local copy_cmd
-  if [[ "$OSTYPE" == "darwin"* ]]; then
-    copy_cmd="pbcopy"
-  elif (( $+commands[wl-copy] )); then
-    copy_cmd="wl-copy"
-  elif (( $+commands[clip.exe] )); then
-    copy_cmd="clip.exe"
-  else
-    copy_cmd="cat" 
-  fi
-
   # Use Zsh glob qualifiers:
   # (N): null_glob (don't error if no match)
   # (.): match regular files only
@@ -35,7 +23,7 @@ plans() {
     --reverse \
     --border \
     --prompt "Claude Plans (Recent first) > " \
-    --header "ENTER: Copy to Clipboard / CTRL-E: Edit" \
+    --header "ENTER: Open / CTRL-E: Edit" \
     --preview "bat --color=always --style=numbers {}" \
     --preview-window "right:60%:wrap" \
     --bind "ctrl-e:execute(${EDITOR:-vim} {})+abort"
@@ -43,7 +31,10 @@ plans() {
 
   # Handle the selection (if Enter was pressed)
   if [[ -n "$selected_file" ]]; then
-    echo -n "$selected_file" | eval "$copy_cmd"
-    echo "✅ Copied the path of $(basename "$selected_file") to clipboard."
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+      open "$selected_file"
+    else
+      xdg-open "$selected_file"
+    fi
   fi
 }
