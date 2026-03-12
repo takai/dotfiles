@@ -43,7 +43,7 @@ plans() {
 
   # Handle the selection (if Enter was pressed)
   if [[ -n "$selected_file" ]]; then
-    cat "$selected_file" | eval "$copy_cmd"
-    echo "✅ Copied the content of $(basename "$selected_file") to clipboard."
+    echo -n "$selected_file" | eval "$copy_cmd"
+    echo "✅ Copied the path of $(basename "$selected_file") to clipboard."
   fi
 }
