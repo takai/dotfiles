@@ -56,5 +56,3 @@ use = ["*.zsh"]
 [plugins.mise]
 inline = 'eval "$(mise activate zsh)"'
 
-[plugins.zoxide]
-inline = 'eval "$(mise exec zoxide -- zoxide init zsh)"'
