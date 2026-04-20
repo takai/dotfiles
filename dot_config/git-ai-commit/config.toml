@@ -1,4 +1,1 @@
 prompt = "conventional"
-
-[engines.codex]
-args = ["exec", "-m", "gpt-5.1-codex-mini"]
